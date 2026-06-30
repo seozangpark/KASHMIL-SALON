@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KASHMIL UNISEX SALON™</title>
+
+  <!-- PREMIUM FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<!-- EDGE NAV -->
+<div class="edge-tab" id="edgeTab">☰</div>
+
+<!-- SIDE NAV -->
+<div class="side-nav" id="sideNav">
+  <div class="nav-item" data-target="home">Home</div>
+  <div class="nav-item" data-target="about">About</div>
+  <div class="nav-item" data-target="services">Services</div>
+  <div class="nav-item" data-target="pricing">Pricing</div>
+  <div class="nav-item" data-target="gallery">Experience</div>
+  <div class="nav-item" data-target="booking">Booking</div>
+  <div class="nav-item" data-target="contact">Contact</div>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<!-- HERO -->
+<section id="home" class="section hero">
+  <div class="hero-content">
+    <h1>KASHMIL UNISEX SALON™</h1>
+    <p>Luxury Grooming. Precision. Elegance.</p>
+    <button onclick="scrollToSection('booking')">Book Appointment</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>Premium unisex salon delivering ultra-modern grooming with luxury ambience and expert care.</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Services</h2>
+
+  <div class="grid">
+    <div class="card">Haircut</div>
+    <div class="card">Beard Styling</div>
+    <div class="card">Facial</div>
+    <div class="card">Hair Spa</div>
+    <div class="card">Manicure</div>
+    <div class="card">Pedicure</div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section">
+  <h2>Pricing Plans</h2>
+
+  <div class="pricing-grid">
+    <div class="price-card">Basic</div>
+    <div class="price-card">Standard</div>
+    <div class="price-card">Premium</div>
+  </div>
+</section>
+
+<!-- EXPERIENCE (ONLY 4 IMAGES - FROM /image FOLDER) -->
+<section id="gallery" class="section">
+  <h2>Salon Experience</h2>
+
+  <div class="image-grid">
+
+    <div class="img-card">
+      <img src="images/lobby.jpg" alt="Lobby" />
+      <div class="label">Lobby</div>
+    </div>
+
+    <div class="img-card">
+      <img src="images/reception.jpg" alt="Reception" />
+      <div class="label">Reception</div>
+    </div>
+
+    <div class="img-card">
+      <img src="images/waiting.jpg" alt="Waiting Area" />
+      <div class="label">Waiting Area</div>
+    </div>
+
+    <div class="img-card">
+      <img src="images/interior.jpg" alt="Interior" />
+      <div class="label">Interior</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="section">
+  <h2>Book Appointment</h2>
+
+  <form id="bookingForm">
+    <input type="text" placeholder="Full Name" required />
+    <input type="tel" placeholder="Phone Number" required />
+
+    <select>
+      <option>Haircut</option>
+      <option>Beard Styling</option>
+      <option>Facial</option>
+      <option>Hair Spa</option>
+    </select>
+
+    <input type="date" required />
+
+    <button type="submit">Send on WhatsApp</button>
+  </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>📍 Lucknow, Uttar Pradesh</p>
+  <p>📞 +91 XXXXX XXXXX</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
